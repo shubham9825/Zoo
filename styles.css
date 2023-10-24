@@ -656,7 +656,7 @@ input[type="submit"] {
   position: relative;
 }
 
-.mapInfo iframe,
+.mapInfo,
 .eventsInfo img {
   width: 100%;
 }
