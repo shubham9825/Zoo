@@ -1,0 +1,1040 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: #121d22;
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", serif;
+  margin-top: 0px;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 100%;
+}
+
+p {
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 72px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 17px 0px;
+  color: #ff8906;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.area {
+  padding: 150px 15px;
+}
+
+.area-bottom {
+  padding: 0px 15px 150px;
+}
+
+.area-top {
+  padding: 150px 15px 0px;
+}
+
+.area-clear {
+  padding: 0px 15px;
+}
+
+.navBar {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 160px;
+  height: 160px;
+}
+
+nav ul {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav ul li {
+  margin-left: 7px;
+  margin-right: 7px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #ff8906;
+  border-bottom: 3px solid #ff8906;
+}
+
+button {
+  cursor: pointer;
+  width: fit-content;
+  padding: 12px 40px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+button a {
+  color: #000;
+}
+
+button:hover a {
+  color: #fff;
+}
+
+/* 0f0e17 */
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-image: linear-gradient(180deg, #f28e5a00 0%, #00000000 65%);
+}
+
+#heroHome {
+  position: relative;
+  width: 100%;
+  background-image: url("images/bg-elephant.jpg");
+  /*https://isorepublic.com/photo/elephant-in-thailand/*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#heroHome::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 101%;
+  /* background-image: linear-gradient(180deg, #121d22 0%, #F2295B00 50%); */
+  background-image: linear-gradient(180deg, #121d22, #121d2200, #121d22);
+  opacity: 1;
+  z-index: 1;
+}
+
+#mainSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 2;
+  position: inherit;
+  min-height: 600px;
+}
+
+#mainSection h1 {
+  text-align: center;
+  color: #ff8906;
+}
+
+#mainSection h2 {
+  color: #fff;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.mainBtn {
+  background-color: #fff;
+  color: #000;
+  z-index: 3;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  width: fit-content;
+  padding: 12px 40px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+.mainBtn:hover {
+  background-color: rgba(255, 137, 6, 1);
+  box-shadow: 0 2px 4px rgba(255, 137, 6, 0.6);
+  color: #fff;
+}
+
+#explore .container {
+  width: 100%;
+  flex-direction: column;
+}
+
+#about .container {
+  flex-direction: row;
+  justify-content: end;
+}
+
+#services .container {
+  width: 100%;
+  flex-direction: column;
+}
+
+.safari .container {
+  width: 100%;
+  flex-direction: row;
+}
+
+#tickets .container {
+  width: 100%;
+  flex-direction: column;
+}
+
+.animalInfo,
+.contactInfo,
+.servicesInfo,
+.eventsInfo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.eventsInfo {
+  margin-bottom: 50px;
+}
+
+.eventsInfo h2,
+.safariInfo h2,
+.aboutInfo h2 {
+  margin-bottom: 20px;
+}
+
+.servicesContant {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#about {
+  background-image: url("images/two-birds-in-tree.jpg");
+  /* https://www.pexels.com/photo/white-and-black-birds-piercing-on-tree-branch-110812/  */
+}
+
+#safari {
+  background-image: url("images/bird.jpg");
+  /* https://www.pexels.com/photo/2-grey-and-black-birds-45853/  */
+}
+
+
+
+#about,
+#safari1,
+#safari2,
+#safari3,
+#safari4 {
+  margin: 150px auto;
+}
+
+#safari1 .container {
+  justify-content: end;
+}
+
+#safari3 .container {
+  justify-content: end;
+}
+
+#safari1 {
+  background-image: url("images/wild.jpg");
+  /* https://wallspic.com/image/138664-leopard_on_brown_tree_branch  */
+}
+
+#safari2 {
+  background-image: url("images/alligator.jpg");
+  /* https://www.pexels.com/photo/black-alligator-on-water-1386560/  */
+}
+
+#safari3 {
+  background-image: url("images/boreal-forest.jpg");
+  /* https://unsplash.com/photos/NQSWvyVRIJk  */
+}
+
+#safari4 {
+  background-image: url("images/batcaves.jpg");
+  /* https://pixabay.com/photos/fairy-grottoes-hall-field-cave-mine-2192134/  */
+}
+
+.safari {
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  background-position: center;
+}
+
+.safari:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: linear-gradient(180deg, #121d22 0%, #F2295B00 50%); */
+  background-image: linear-gradient(180deg, #121d22, #121d2278, #121d22);
+  opacity: 1;
+  z-index: 1;
+}
+
+.safariInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.aboutInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+#about {
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+#about:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: linear-gradient(180deg, #121d22 0%, #F2295B00 50%); */
+  background-image: linear-gradient(180deg, #121d22, #121d225e, #121d22);
+  opacity: 1;
+  z-index: 1;
+}
+
+.card {
+  width: 32%;
+  background-color: #1e292d;
+  border: 3px solid #00000000;
+  text-align: center;
+  padding: 30px 80px;
+  margin: 5px;
+}
+
+.card:hover {
+  background-color: rgba(255, 137, 6, 1);
+  border: 3px solid #ffffff;
+}
+
+.servicesInfo .card:hover {
+  background-color: #1e292d;
+  border: 3px solid rgba(255, 137, 6, 1);
+}
+
+.card img {
+  height: 150px;
+  filter: brightness(0) invert(1);
+}
+
+.card h3 {
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+footer .area {
+  padding-top: 0;
+}
+
+footer .area div {
+  width: 25%;
+}
+
+footer ul {
+  flex-direction: column;
+  font-size: 17px;
+  line-height: 27px;
+  margin-left: 0px;
+}
+
+footer nav ul,
+footer nav ul li {
+  margin: 0px;
+  font-weight: 100;
+}
+
+footer ul a {
+  font-size: 17px;
+}
+
+#copyright {
+  text-align: center;
+  padding: 30px;
+  border-top: solid 1px #fff;
+  margin-bottom: 0px;
+}
+
+.ticketInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ffffff;
+}
+
+.table-head {
+  background-color: #ff8906;
+  color: #000000;
+}
+
+.table-head th {
+  padding: 25px !important;
+  border: 3px solid #ffffff;
+}
+
+.table-body td {
+  padding: 25px !important;
+  text-align: center;
+  border: 3px solid #ffffff;
+}
+
+.table-body tr {
+  border: 3px solid #ffffff;
+}
+
+#heroContact {
+  position: relative;
+  width: 100%;
+  background-image: url("images/bg-contact.jpg");
+  /* https://pixabay.com/photos/fox-sleeping-resting-relaxing-red-1284512/ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#heroEvent {
+  position: relative;
+  width: 100%;
+  background-image: url("images/bg-events.jpg");
+  /* https://wallspic.com/image/125842-moustache-felidae-apex_predator-cheetah-wildlife */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#heroAbout {
+  position: relative;
+  width: 100%;
+  background-image: url("images/bg-about.jpg");
+  /* https://www.pexels.com/photo/impalas-on-lawn-against-river-and-forest-6066306/ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#heroGallery {
+  position: relative;
+  width: 100%;
+  background-image: url("images/bg-gallery.jpg");
+  /* https://wallspic.com/image/22168-tree-lake-mountain-forest-tarn */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#heroService {
+  position: relative;
+  width: 100%;
+  background-image: url("images/bg-service.jpg");
+  /* https://www.pexels.com/photo/landscape-photo-of-forest-2055389 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#heroSafari {
+  position: relative;
+  width: 100%;
+  background-image: url("images/bg-safari.jpg");
+  /* https://www.pexels.com/photo/toco-toucan-perching-on-a-tree-during-a-foggy-weather-17767034/ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heroPage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 101%;
+  /* background-image: linear-gradient(180deg, #121d22 0%, #F2295B00 50%); */
+  background-image: linear-gradient(180deg, #121d22, #121d2200, #121d22);
+  opacity: 1;
+  z-index: 1;
+}
+
+#pageHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  height: 35vh;
+  z-index: 2;
+  position: inherit;
+  min-height: 300px;
+}
+
+#pageHead h1 {
+  text-align: center;
+  color: #ff8906;
+}
+
+.headingGallery {
+  text-align: center;
+  color: #ff8906;
+  font-size: 72px;
+  margin-bottom: 24px;
+}
+
+.column-50 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.row-50 {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  z-index: 3;
+  flex-wrap: wrap;
+}
+
+.column-70 {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.row-70 {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  z-index: 3;
+  flex-wrap: wrap;
+}
+
+.column-30 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.row-30 {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  z-index: 3;
+  flex-wrap: wrap;
+}
+
+.eventsInfo .column-70 {
+  padding-left: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
+
+label {
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 400;
+  margin: 0px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 5px;
+  font-size: 17px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  width: fit-content;
+  padding: 12px 40px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+button,
+input[type="submit"] {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin-top: 20px;
+}
+
+#banner {
+  width: 100%;
+
+  z-index: 2;
+  background-position: center;
+}
+
+#banner hr:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: linear-gradient(180deg, #121d22 0%, #F2295B00 50%); */
+  background-image: linear-gradient(180deg, #121d22, #121d2200, #121d22);
+  opacity: 1;
+  z-index: 1;
+}
+
+#banner hr {
+  height: 200px;
+  border-color: #00000000;
+  background-image: url("images/bg-elephant2.jpg");
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+.mapInfo img,
+.eventsInfo img {
+  width: 100%;
+}
+
+/*Gallery*/
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+
+}
+
+.item {
+  flex: 0 0 calc(33.33% - 10px);
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-weight: bold;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
+.item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/*Gallery End*/
+
+/*About Start*/
+
+.subContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subContent h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.leftSection {
+  width: 50%;
+  padding-right: 10%;
+}
+
+.rightSection {
+  width: 50%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.grid-item {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.grid-item:hover::before {
+  opacity: 0;
+}
+
+.grid-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay-content {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  z-index: 1;
+}
+
+.overlay-content h3 {
+  color: #fff;
+}
+
+.grid-item:hover .overlay {
+  opacity: 0;
+}
+
+.contactContainer {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(to top,
+      rgba(155, 130, 100, 0.8) 0%,
+      rgba(155, 130, 100, 0.6) 30%,
+      #121d22 50%,
+      #121d22 100%);
+}
+
+.contactInfoSection {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.contactInfoSection h4 {
+  font-size: 2.5rem;
+  color: #ff8906;
+}
+
+.contactInfoSection h2 {
+  font-size: 5rem;
+  margin-bottom: 12px;
+}
+
+.contactInfoSection p {
+  font-size: 32px;
+}
+
+/* About End*/
+
+/* TABLET VIEW START*/
+
+@media only screen and (max-width: 1024px) {
+  .card img {
+    height: 60px;
+  }
+
+  .safariInfo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .safariInfo button {
+    margin: 0 auto;
+  }
+
+  .gallery {
+    max-width: 90%;
+    margin-top: 30px;
+  }
+
+  .gallery .item {
+    flex: 0 0 calc(50% - 10px);
+    margin: 5px;
+  }
+}
+
+/* TABLET VIEW END */
+
+/* MOBILE VIEW START */
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 36px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .navBar {
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+  }
+
+  table {
+    font-size: 15px;
+  }
+
+  .area {
+    padding: 100px 15px;
+  }
+
+  .area-bottom {
+    padding: 0px 15px 100px;
+  }
+
+  .area-top {
+    padding: 100px 15px 0px;
+  }
+
+  .animalInfo,
+  .contactInfo,
+  .servicesInfo {
+    flex-direction: column;
+  }
+
+  .eventsInfo {
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0px;
+    margin: 10px 0px;
+  }
+
+  #explore .container h2 {
+    text-align: center;
+  }
+
+  .safariInfo {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #about,
+  #safari1,
+  #safari2,
+  #safari3,
+  #safari4 {
+    margin: 100px auto;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  footer .area div {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer nav {
+    margin-bottom: 24px;
+  }
+
+  .column-50,
+  .row-50,
+  .column-70,
+  .row-70,
+  .column-30,
+  .row-30 {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  form {
+    padding-right: 0px;
+  }
+
+  .contactInfo .row-50,
+  .eventsInfo .column-70 {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .contactInfo .row-50 .column-50 {
+    width: 50%;
+  }
+
+  .eventsInfo .column-70 {
+    padding-left: 0px;
+  }
+
+  .gallery {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .gallery .item {
+    flex: 0 0 calc(100% - 10px);
+    margin: 5px;
+  }
+
+  .subContent {
+    flex-direction: column;
+  }
+
+  .leftSection,
+  .rightSection {
+    width: 100%;
+    padding-right: 0%;
+  }
+
+  .aboutInfo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .grid-item {
+    padding-bottom: 100%;
+  }
+
+  .overlay-content {
+    bottom: 5px;
+    left: 5px;
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+/* /* MOBILE VIEW END */
