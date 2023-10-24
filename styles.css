@@ -259,8 +259,6 @@ header {
   /* https://www.pexels.com/photo/2-grey-and-black-birds-45853/  */
 }
 
-
-
 #about,
 #safari1,
 #safari2,
@@ -658,7 +656,7 @@ input[type="submit"] {
   position: relative;
 }
 
-.mapInfo img,
+.mapInfo iframe,
 .eventsInfo img {
   width: 100%;
 }
@@ -672,7 +670,6 @@ input[type="submit"] {
   max-width: 80%;
   min-height: 100vh;
   margin: 0 auto;
-
 }
 
 .item {
@@ -811,11 +808,13 @@ input[type="submit"] {
 .contactContainer {
   position: relative;
   min-height: 100vh;
-  background: linear-gradient(to top,
-      rgba(155, 130, 100, 0.8) 0%,
-      rgba(155, 130, 100, 0.6) 30%,
-      #121d22 50%,
-      #121d22 100%);
+  background: linear-gradient(
+    to top,
+    rgba(155, 130, 100, 0.8) 0%,
+    rgba(155, 130, 100, 0.6) 30%,
+    #121d22 50%,
+    #121d22 100%
+  );
 }
 
 .contactInfoSection {
